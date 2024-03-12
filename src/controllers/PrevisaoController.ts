@@ -31,6 +31,7 @@ class PrevisaoController {
       { explicitArray: false, trim: true, explicitRoot: false },
       (error: any, result: any) => {
         if (error) {
+          
           res.json({ message: error });
         } else {
           res.json(result);
